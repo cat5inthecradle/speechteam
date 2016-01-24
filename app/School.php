@@ -2,10 +2,9 @@
 
 namespace App;
 
-use App\Student;
 use Illuminate\Database\Eloquent\Model;
 
-class Team extends Model
+class School extends Model
 {
-    
+    //
 }

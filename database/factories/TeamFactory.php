@@ -12,6 +12,20 @@
 */
 
 $factory->define(App\Team::class, function (Faker\Generator $faker) {
+    include database_path('factories') . '/includes/adjectives.php';
+    include database_path('factories') . '/includes/nouns.php';
+
+    $adjective = function() use ($adjectives) {
+        return $adjectives[array_rand($adjectives)];
+    };
+    $noun = function() use ($nouns) {
+        return $nouns[array_rand($nouns)];
+    };
+
+    return [
+        'title' => ucwords('The ' . $adjective() . ' ' . $noun())
+    ];
+
     return [
         'title' => $faker->randomElement([
             'Founder Of The North',

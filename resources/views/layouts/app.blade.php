@@ -49,6 +49,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
                     <li><a href="{{ url('/team') }}">Teams</a></li>
+                    <li><a href="{{ url('/school') }}">Schools</a></li>
+                    <li><a href="{{ url('/student') }}">Students</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

@@ -36,4 +36,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/home', 'HomeController@index');
 
     Route::resource('team', 'TeamController');
+    Route::resource('school', 'SchoolController');
+    Route::resource('student', 'StudentController');
 });

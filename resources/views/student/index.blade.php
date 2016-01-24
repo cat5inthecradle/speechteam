@@ -4,22 +4,22 @@
 <div class="container">
     <div class="row">
         <div class="panel panel-default">
-            <div class="panel-heading">Teams</div>
+            <div class="panel-heading">Schools</div>
 
             <div class="panel-body">
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Title</th>
+                            <th>Student Name</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse($teams as $team)
+                        @forelse($students as $student)
                         <tr>
-                            <td><a href="{{ route('team.show', ['team_id' => $team->id]) }}">{{ $team->title}}</a></td>
+                            <td><a href="{{ route('student.show', ['student_id' => $student->id]) }}">{{ $student->name}}</a></td>
                         </tr>
                         @empty
-                        <tr><td colspan='0'>Sorry, no Teams are available.</td></tr>
+                        <tr><td colspan='0'>Sorry, no Students are available.</td></tr>
                         @endforelse
                     </tbody>
                 </table>
