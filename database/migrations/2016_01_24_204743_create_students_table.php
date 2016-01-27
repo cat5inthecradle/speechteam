@@ -16,6 +16,8 @@ class CreateStudentsTable extends Migration
             $table->increments('id');
             $table->timestamps();
 
+            $table->integer('school_id')->index();
+
             $table->string('name');
         });
     }
