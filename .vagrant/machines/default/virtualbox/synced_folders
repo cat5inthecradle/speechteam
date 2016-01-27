@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/speechteam":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/speechteam","hostpath":"/Users/sa-pair-2/code/darin/speechteam","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/sa-pair-2/code/darin/speechteam","disabled":false}}}
